@@ -1,0 +1,281 @@
+<objects>
+
+    <!-- grid -->
+    <object key="of" value="De"/>
+    <object key="Remove Filter" value="Remover filtro"/>
+    <object key="This column is not sorteable" value="Esta coluna n&#227;o &#233; classific&#225;vel"/>
+    <object key="Sorting not allowed" value="Classifica&#231;&#227;o n&#227;o permitida"/>
+    <object key="Maximum number of sorted columns" value="N&#250;mero m&#225;ximo de colunas classific&#225;veis"/>
+    <object key="Sorting not applicable" value="Classifica&#231;&#227;o n&#227;o aplic&#225;vel"/>
+    <object key="Selected Row" value="Linha selecionada"/>
+    <object key="Selected Rows" value="Linhas selecionadas"/>
+    <object key="Cancel changes and reload data?" value="Desconsidera altera&#231;&#245;es e recarrega dados?"/>
+    <object key="Attention" value="Aten&#231;&#227;o"/>
+    <object key="Loading data..." value="Carga de dados..."/>
+    <object key="Error while loading data" value="Erro durante carregamento de dados"/>
+    <object key="Loading Data Error" value="Erro de carga de dados"/>
+    <object key="Delete Rows?" value="Exclui as linhas?"/>
+    <object key="Delete Confirmation" value="Confirma exclus&#227;o"/>
+    <object key="Error while deleting rows." value="Erro durante a exclus&#227;o de linhas"/>
+    <object key="Deleting Error" value="Erro de exclus&#227;o"/>
+    <object key="Error while saving" value="Erro durante salvamento"/>
+    <object key="Saving Error" value="Erro de salvamento"/>
+    <object key="A mandatory column is empty." value="Uma coluna obriga&#243;ria est&#225; vazia"/>
+    <object key="Value not valid" value="Valor n&#227;o v&#225;lido"/>
+    <object key="sorting conditions" value="Condi&#231;&#245;es de classifica&#231;&#227;o"/>
+    <object key="filtering conditions" value="Condi&#231;&#245;es de filtro"/>
+    <object key="filtering and sorting settings" value="Defini&#231;&#227;o de filtro e de classifi&#231;&#227;o"/>
+    <object key="Filtering/Sorting data (CTRL+F)" value="Filtragem/Classifica&#231;&#227;o de dados (CTRL+F)"/>
+    <object key="Select the previous row in grid" value="Seleciona o registro anterior" />
+    <object key="Select the next row in grid" value="Seleciona o pr&#243;ximo registro" />
+    
+    <!-- export -->
+    <object key="grid export" value="Exporta&#231;&#227;o de dados da grade"/>
+    <object key="export" value="Exportar"/>
+    <object key="exportmnemonic" value="E"/>
+    <object key="column" value="Coluna"/>
+    <object key="sel." value="Sel."/>
+    <object key="you must select at least one column" value="&#233; necess&#225;rio selecionar pelo menos uma coluna"/>
+    <object key="columns to export" value="Colunas a exportar"/>
+    <object key="export type" value="Formato de exporta&#231;&#227;o"/>
+
+    <!-- import -->
+    <object key="Import records (CTRL+M)" value="Importar registros (CTRL+M)" />
+    <object key="grid import" value="Importa&#231;&#227;o de dados para a grade"/>
+    <object key="file to import" value="Arquivo a importar"/>
+    <object key="import" value="Importar"/>
+    <object key="importmnemonic" value="I"/>
+    <object key="columns to import" value="Colunas a importar"/>
+    <object key="import type" value="Formato de importa&#231;&#227;o"/>
+    <object key="error while importing data" value="Erro durante a importa&#231;&#227;o de dados"/>
+    <object key="import completed" value="Importa&#231;&#227;o completa"/>
+
+    <!-- quick filter -->
+    <object key="To value" value="At&#233; "/>
+    <object key="Filter by" value="Filtrar por"/>
+    <object key="From value" value="De "/>
+    <object key="equals" value="Igual a "/>
+    <object key="contains" value="Contendo"/>
+    <object key="starts with" value="Inicia com"/>
+    <object key="ends with" value="Termina com"/>
+
+    <!-- lookup -->
+    <object key="Code is not correct." value="C&#243;digo n&#227;o v&#225;lido"/>
+    <object key="Code Validation" value="Valida&#231;&#227;o de c&#243;digo"/>
+    <object key="Code Selection" value="Sele&#231;&#227;o de c&#243;digo"/>
+
+    <!-- form -->
+    <object key="Confirm deliting data?" value="Confirma a dele&#231;&#227;o dos dados?"/>
+    <object key="Error while saving: incorrect data." value="Erro durante salvamento: dados nao corretos"/>
+    <object key="Error on deleting:" value="Erro dutante exclus&#227;o:"/>
+    <object key="Error on Loading" value="Erro de carga"/>
+    <object key="Error while loading data:" value="Erro durante a carga de dados:"/>
+    <object key="Error on setting value to the input control having the attribute name" value="Erro durante a defini&#231;&#227;o do conte&#250;do para o controle "/>
+
+    <!-- toolbar buttons -->
+    <object key="Delete record (CTRL+D)" value="Exclus&#227;o de registro (CTRL+D)"/>
+    <object key="Edit record (CTRL+E)" value="Edi&#231;&#227;o de registro (CTRL+E)"/>
+    <object key="New record (CTRL+I)" value="Novo registro (CTRL+I)"/>
+    <object key="Reload record/Cancel current operation (CTRL+Z)" value="Recarrega registro/Cancela opera&#231;&#227;o corrente (CTRL+Z)"/>
+    <object key="Save record (CTRL+S)" value="Salva o registro (CTRL+S)"/>
+    <object key="Copy record (CTRL+C)" value="Copia o registro (CTRL+C)"/>
+    <object key="Export record (CTRL+X)" value="Exporta&#231;&#227;o dos registros (CTRL+X)"/>
+    <object key="Import records (CTRL+M)" value="Importa&#231;&#227;o dos registros (CTRL+M)"/>
+    <object key="Load the first block of records" value="Carrega o primeiro bloco de dados"/>
+    <object key="Select the previous row in grid" value="Seleciona a linha anterior na grade"/>
+    <object key="Select the next row in grid" value="Seleciona a proxima linha na grade"/>
+    <object key="Load the previous block of records" value="Carrega o bloco de dados anterior"/>
+    <object key="Load the next block of records" value="Carrega o proximo bloco de dados"/>
+    <object key="Load the last block of records" value="Carrega o &#250;ltimo bloco de dados"/>
+    <object key="Insert" value="Inserir"/>
+    <object key="Edit" value="Modificar"/>
+    <object key="Copy" value="Copiar"/>
+    <object key="Delete" value="Excluir"/>
+    <object key="Save" value="Salvar"/>
+    <object key="Reload" value="Recarregar"/>
+    <object key="Export" value="Exportar"/>
+    <object key="Filter" value="Filtrar"/>
+
+    <!-- MDI Frame -->
+    <object key="file" value="Arquivo"/>
+    <object key="filemnemonic" value="A"/>
+    <object key="exit" value="Sair"/>
+    <object key="exitmnemonic" value="R"/>
+    <object key="change user" value="Trocar usu&#225;rio"/>
+    <object key="changeusermnemonic" value="U"/>
+    <object key="changelanguagemnemonic" value="L"/>
+    <object key="help" value="Ajuda"/>
+    <object key="about" value="Sobre"/>
+    <object key="helpmnemonic" value="U"/>
+    <object key="aboutmnemonic" value="S"/>
+    <object key="are you sure to quit application?" value="Deseja realmente sair do sistema?"/>
+    <object key="quit application" value="Termina  a aplica&#231;&#227;o"/>
+    <object key="forcegcmnemonic" value="F"/>
+    <object key="Force GC" value="Limpar Memoria"/>
+    <object key="Java Heap" value="Java Heap"/>
+    <object key="Data Carregamento" value="Data Carregamento" />
+    <object key="Login" value="Login" />
+    <object key="Username" value="Nome de Usuário" />
+    <object key="Autenticação" value="Autenticação"/>
+    <object key="Password" value="Senha" />
+    <object key="L" value="L" />
+    <object key="Sair" value="Sair"/>
+    <object key="S" value="S" />
+    <object key="English" value="Ingles"/> 
+    <object key="Italiano" value="Italiano"/> 
+    <object key="Português do Brasil" value="Português do Brasil"/> 
+    <object key="Cadastro de Viagens" value="Cadastro de Viagens"/>
+    <object key="Cadastro de Bancos" value="Cadastro de Bancos"/>
+    <object key="Cadastro do Centro de Custos" value="Cadastro do Centro de Custos"/>
+    <object key="drag" value="drag"/>
+    <object key="Codigo " value="Codigo "/>
+    <object key="Data Descarga" value="Data Descarga"/>
+    <object key="Local do Carregamento" value="Local do Carregamento"/>
+    <object key="Local da Descarga" value="Local da Descarga"/>
+    <object key="Peso da Carga" value="Peso da Carga"/>
+    <object key="Valor/Tonelada" value="Valor/Tonelada"/>
+    <object key="Nº Documento" value="Nº Documento"/>
+    <object key="Obsercações" value="Obsercações"/>
+    <object key="Produto" value="Produto"/>
+    <object key="Data" value="Data"/>
+    <object key="Mes/Ano" value="Mes/Ano"/>
+    <object key="Mes Referência" value="Mes Referência"/>
+    <object key="Local de Carregamento" value="Local de Carregamento"/>
+    <object key="Valor Por Tonelada" value="Valor Por Tonelada"/>
+    <object key="Peso Total" value="Peso Total"/>
+    <object key="Nr Nota Fiscal" value="Nr Nota Fiscal"/>
+    <object key="Observações" value="Observações"/>
+    <object key=" " value=" "/>
+    <object key="Cadastro de Contas" value="Cadastro de Contas"/>
+    <object key="Controle Casa" value="Controle Casa"/>
+    <object key="Contas a pagar" value="Contas a pagar"/>
+    <object key="Confirma Recebimentos" value="Confirma Recebimentos"/>
+    <object key="Sair da Aplicação" value="Sair da Aplicação"/>
+    <object key="allocated" value="alocado"/>
+    <object key="change language" value="Trocar Idioma"/>
+    <object key="changemnemonic" value="L"/>
+    <object key="cancelmnemonic" value="A"/>
+    <object key="cancel" value="Cancelar"/>
+    <object key="yes" value="Sim"/>
+    <object key="no" value="N&#227;o"/>
+    <object key="Functions" value="Fun&#231;&#245;es"/>
+    <object key="Error while executing function" value="Erro duranta a execu&#231;&#227;o da fun&#231;&#227;o"/>
+    <object key="Error" value="Erro"/>
+    <object key="infoPanel" value="Info"/>
+    <object key="imageButton" value="Sobre"/>
+    <object key="Window" value="Janela"/>
+    <object key="windowmnemonic" value="J"/>
+    <object key="Close All" value="Fechar todas as janelas"/>
+    <object key="closeallmnemonic" value="C"/>
+    <object key="Press ENTER to find function" value="Tecle ENTER para localizar fun&#231;&#227;o"/>
+    <object key="Find Function" value="Localiza fun&#231;&#227;o"/>
+    <object key="Operation in progress..." value="Processamento em curso..."/>
+    <object key="close window" value="Fecha janela"/>
+    <object key="reduce to icon" value="Iconiza"/>
+    <object key="save changes?" value="Confirma altera&#231;&#245;es?"/>
+    <object key="confirm window closing" value="Confirma fechamento da janela"/>
+    <object key="switch" value="Trocar"/>
+    <object key="switchmnemonic" value="T"/>
+    <object key="window name" value="Nome da janela"/>
+    <object key="opened windows" value="Janela aberta"/>
+    <object key="tile horizontally" value="Organiza horizontalmente"/>
+    <object key="tilehorizontallymnemonic" value="H"/>
+    <object key="tile vertically" value="Organiza verticalmente"/>
+    <object key="tileverticallymnemonic" value="V"/>
+    <object key="cascade" value="Visualisa em cascata"/>
+    <object key="cascademnemonic" value="C"/>
+    <object key="minimize" value="Minimizar"/>
+    <object key="minimizemnemonic" value="R"/>
+    <object key="minimize all" value="Minimizar tudo"/>
+    <object key="minimizeallmnemonic" value="T"/>
+    <object key="change background" value="Change background"/>
+    <object key="reset background" value="Reset background"/>
+
+    <!-- select/deselect all -->
+    <object key="select all" value="Seleciona tudo"/>
+    <object key="deselect all" value="Desfaz sele&#231;&#227;o de tudo"/>
+
+    <!-- copy/cut/paste -->
+    <object key="copy" value="Copiar"/>
+    <object key="copymnemonic" value="C"/>
+    <object key="cut" value="Recortar"/>
+    <object key="cutmnemonic" value="T"/>
+    <object key="paste" value="Colar"/>
+    <object key="pastemnemonic" value="O"/>
+    
+    <!-- server -->
+    <object key="Client request not supported" value="Requisi&#231;&#227;o n&#227;o suportada"/>
+    <object key="User disconnected" value="Usu&#225;rio desconectado"/>
+    <object key="Updating not performed: the record was previously updated." value="Atualiza&#231;&#227;o n&#227;o executada: o registro foi atualizado anteriormente"/>
+
+    <!-- wizard -->
+    <object key="back" value="Voltar"/>
+    <object key="next" value="Avan&#231;ar"/>
+    <object key="finish" value="Fim"/>
+
+    <!-- image panel -->
+    <object key="image selection" value="Seleciona imagem"/>
+
+    <!-- tip panel -->
+    <object key="show 'tip of the day' after launching" value="Mostra 'dica do dia' ap&#243;s iniciar"/>
+    <object key="previous tip" value="Dica anterior"/>
+    <object key="next tip" value="Pr&#243;xima dica"/>
+    <object key="close" value="Fechar"/>
+    <object key="tip of the day" value="Dica do dia"/>
+	
+    <!-- grid profile -->
+    <object key="grid profile management" value="Gerenciamento de padr&#245;es"/>
+    <object key="restore default grid profile" value="Restaura o padr&#227;o corrente"/>
+    <object key="create new grid profile" value="Cria novo profile"/>
+    <object key="profile description" value="Descreve o novo padr&#227;o"/>
+    <object key="remove current grid profile" value="Remove o padr&#227;o corrente"/>
+    <object key="select grid profile" value="Seleciona um padr&#227;o de grade"/>
+    <object key="default profile" value="Pad&#227;o"/>
+      
+    <!-- search box -->
+    <object key="search" value="Pesquisa"/>
+    <object key="not found" value="N&#227;o localizado"/>
+       
+    <!-- pivot table -->
+    <object key="pivot table settings" value="Defini&#231;&#245;es da tabela pivot"/> 
+    <object key="row fields" value="Campos de linha"/> 
+    <object key="column fields" value="Campos de coluna"/> 
+    <object key="data fields" value="Campos de dado"/> 
+    <object key="filtering conditions" value="Condi&#231;&#245;es de filtro"/> 
+    <object key="field" value="Campo"/> 
+    <object key="checked" value="Marcado"/> 
+    <object key="at least one data field must be selected" value="Pelo menos um campo deve ser selecionado."/> 
+    <object key="at least one row field must be selected" value="Pelo menos uma linha deve ser selecionada."/> 
+    <object key="at least one column field must be selected" value="Pelo menos uma coluna deve ser selecionada."/>  
+    <object key="expand all" value="Expandir tudo"/>
+    <object key="collapse all" value="Contrair tudo"/>
+          
+    <!-- application translations -->
+    <object key="this text will be translated" value="Esse texto ser&#225; traduzido" />
+    <object key="date" value="Data" />
+    <object key="combobox" value="Combobox" />
+    <object key="opened" value="Aberto" />
+    <object key="suspended" value="Suspenso" />
+    <object key="delivered" value="Entregue" />
+    <object key="closed" value="Fechado" />
+    <object key="radio button" value="Radio Button" />
+    <object key="stringValue" value="Texto" />
+    <object key="dateValue" value="Data" />
+    <object key="checkValue" value="CheckBox" />
+    <object key="radioButtonValue" value="RadioButton" />
+    <object key="comboValue" value="ComboBox" />
+    <object key="currencyValue" value="Valor" />
+    <object key="numericValue" value="N&#250;mero" />
+    <object key="lookupValue" value="C&#243;digo de procura" />
+    <object key="descrLookupValue" value="Descri&#231;&#227;o da procura" />
+    <object key="taValue" value="&#225;rea de Texto" />
+
+    <currencySymbol>R$</currencySymbol>
+    <decimalSymbol>,</decimalSymbol>
+    <groupingSymbol>.</groupingSymbol>
+    <dateFormat>DMY</dateFormat>
+    <showCenturyInDateFormat>true</showCenturyInDateFormat>
+    <dateFormatSeparator>/</dateFormatSeparator>
+    <timeFormat>HH:mm</timeFormat>
+
+</objects>

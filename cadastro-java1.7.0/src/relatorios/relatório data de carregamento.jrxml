@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="RelatorioDataCarregamento" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="375df38d-c6c4-4553-a637-bcfdc4d3b58c">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="DATA_INICIO" class="java.util.Date"/>
+	<parameter name="DATA_FIM" class="java.util.Date"/>
+	<queryString>
+		<![CDATA[SELECT
+     viagens.`veiculo_vei_placa` AS viagens_veiculo_vei_placa,
+     viagens.`vi_loc_car` AS viagens_vi_loc_car,
+     viagens.`vi_data_car` AS viagens_vi_data_car,
+     viagens.`vi_valor_total` AS viagens_vi_valor_total,
+     viagens.`vi_mes_ref` AS viagens_vi_mes_ref,
+     viagens.`vi_num_nf` AS viagens_vi_num_nf
+FROM
+     `viagens` viagens
+WHERE
+     vi_data_car BETWEEN $P{DATA_INICIO} AND $P{DATA_FIM}]]>
+	</queryString>
+	<field name="viagens_veiculo_vei_placa" class="java.lang.String"/>
+	<field name="viagens_vi_loc_car" class="java.lang.String"/>
+	<field name="viagens_vi_data_car" class="java.sql.Date"/>
+	<field name="viagens_vi_valor_total" class="java.lang.Double"/>
+	<field name="viagens_vi_mes_ref" class="java.lang.String"/>
+	<field name="viagens_vi_num_nf" class="java.lang.Integer"/>
+	<variable name="VALOR_TOTAL" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[$F{viagens_vi_valor_total}]]></variableExpression>
+	</variable>
+	<variable name="NUM_VIAGENS" class="java.lang.Number" incrementType="Report" calculation="Count">
+		<variableExpression><![CDATA[$F{viagens_vi_data_car}]]></variableExpression>
+	</variable>
+	<title>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="555" height="20" uuid="ac934019-abf7-42c6-bb2d-8055c601d1e5"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Viagéns realizadas entre ( " + new SimpleDateFormat("dd/MM/yyyy").format($P{DATA_INICIO}) + " à " + new SimpleDateFormat ("dd/MM/yyyy").format($P{DATA_FIM}) + ")"]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="66" height="20" backcolor="#CCCCCC" uuid="d4d895d1-d1d2-4e1f-8a93-c0a8ca5246ef"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Data]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="66" y="0" width="79" height="20" backcolor="#CCCCCC" uuid="cbfd5af0-d92b-45c7-839d-9c35557b4722"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Placa]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="145" y="0" width="159" height="20" backcolor="#CCCCCC" uuid="dafe9523-8b46-4288-be2c-7b6d19681008"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Local Carregamento]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="304" y="0" width="100" height="20" backcolor="#CCCCCC" uuid="3136c061-4e52-423c-924e-31d9e787e10c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Valor Frete]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="404" y="0" width="82" height="20" backcolor="#CCCCCC" uuid="44424bc2-5d0c-4989-93ff-03dea35add66"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ Ref  Mes/Ano]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="486" y="0" width="69" height="20" backcolor="#CCCCCC" uuid="4261c1a2-66be-4b2c-b9db-5e9ba5f2eb09"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nº CTe]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="555" height="20" backcolor="#F0F0F0" uuid="a74f2bd8-85ab-40bc-99d7-2a9eaf23f01c">
+					<printWhenExpression><![CDATA[($V{REPORT_COUNT} % 2) != 0]]></printWhenExpression>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="0" y="0" width="66" height="20" uuid="72936c46-cc2b-4b72-ba86-0d409b98dfd8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{viagens_vi_data_car}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="66" y="0" width="79" height="20" uuid="73cb581d-942b-40da-831d-5b39b38a92e2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{viagens_veiculo_vei_placa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="145" y="0" width="181" height="20" uuid="10cf5c12-9d86-4d0e-96c7-3943aa0fc828"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{viagens_vi_loc_car}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00">
+				<reportElement x="326" y="0" width="64" height="20" uuid="8af92e0b-1ee8-444e-a0f7-78c233b8c03f"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{viagens_vi_valor_total}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="390" y="0" width="82" height="20" uuid="f9ec2284-a5a0-4c29-acf2-b9dd6f373d1a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{viagens_vi_mes_ref}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="472" y="0" width="61" height="20" backcolor="#CCCCCC" uuid="01960734-ab5d-45d3-b672-c5293713e4f3"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{viagens_vi_num_nf}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<summary>
+		<band height="20">
+			<rectangle>
+				<reportElement x="276" y="0" width="128" height="20" uuid="038a424f-a9fa-4d41-b20a-25f115c91084"/>
+				<graphicElement>
+					<pen lineWidth="1.0"/>
+				</graphicElement>
+			</rectangle>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement x="304" y="0" width="86" height="20" uuid="e0de2650-8598-4809-9934-4abc6312a66d"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{VALOR_TOTAL}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="276" y="0" width="50" height="20" uuid="a0c6d802-a3d8-4626-b96d-497821460914"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total R$]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>
